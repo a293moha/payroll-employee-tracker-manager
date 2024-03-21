@@ -1,32 +1,40 @@
 // Get a reference to the #add-employees-btn element
 const addEmployeesBtn = document.querySelector('#add-employees-btn'); 
-
 // Collect employee data
 // TODO: Get user input to create and return an array of employee objects
-
 const collectEmployees = function() {  
 }
 let count = 0;
 let continueAdd = true;
-
 while (continueAdd && count < 10) {
   const firstName = prompt('Enter First Name');
+  if (firstName === null) break;
   const lastName = prompt('Enter Last Name');
+  if (lastName === null) break;
   const salary = prompt('Enter Salary');
-  count++;
+  if (salary === null) break;
 }
-
 continueAdd = confirm("do you want to add more?")
-
 //progress=> was able to make enter first name, last name and salary, continue and then repeat adding data.
 //need to ensure cancel works and data appears.
+console.log(employees);
+
 
 
 // Display the average salary
+// TODO: Calculate and display the average salary
 const displayAverageSalary = function(employeesArray) {
-  // TODO: Calculate and display the average salary
-  // ***basic mathematics***
+  if(employeesArray.length === 0) {
+    console.log("no salary to calculate average for.")
+    return;
+  }
 }
+
+//now trying to calculate salary
+
+
+
+
 
 // Select a random employee
 const getRandomEmployee = function(employeesArray) {
