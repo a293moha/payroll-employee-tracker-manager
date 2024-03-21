@@ -4,7 +4,7 @@ Challenge 3 requied me to modify a starter code to create an application that en
 .
 
 ## Link to deployed app
-[Link to Deployed page](https://www.example.com)
+[Link to Deployed page](https://a293moha.github.io/payroll-employee-tracker-manager/)
 
 [GitHub](https://github.com/a293moha/payroll-employee-tracker-manager)
 
