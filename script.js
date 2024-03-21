@@ -1,19 +1,29 @@
 // Get a reference to the #add-employees-btn element
-const addEmployeesBtn = document.querySelector('#add-employees-btn');
+const addEmployeesBtn = document.querySelector('#add-employees-btn'); 
 
 // Collect employee data
+// TODO: Get user input to create and return an array of employee objects
 const collectEmployees = function() {
-  // TODO: Get user input to create and return an array of employee objects
+// ***while loop + prompts/confirm***
 }
+let count = 0;
+const addEmployeeBtn = prompt('#add-employees-btn')
+while (count < 5) {
+  console.log("collectEmployees" + count);
+  count++;
+}
+
 
 // Display the average salary
 const displayAverageSalary = function(employeesArray) {
   // TODO: Calculate and display the average salary
+  // ***basic mathematics***
 }
 
 // Select a random employee
 const getRandomEmployee = function(employeesArray) {
   // TODO: Select and display a random employee
+  // ***line 51 of mini project*** (math.randon.method)
 }
 
 /*
