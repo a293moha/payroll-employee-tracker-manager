@@ -7,7 +7,9 @@ const collectEmployees = function() {
 // ***while loop + prompts/confirm***
 }
 let count = 0;
-const addEmployeeBtn = prompt('#add-employees-btn')
+const firstName = prompt('Enter First Name');
+const lastName = prompt('Enter Last Name');
+const salary = prompt('Enter Salary');
 while (count < 5) {
   console.log("collectEmployees" + count);
   count++;
