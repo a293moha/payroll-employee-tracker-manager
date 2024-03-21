@@ -13,33 +13,36 @@ while (continueAdd && count < 10) {
   if (lastName === null) break;
   const salary = prompt('Enter Salary');
   if (salary === null) break;
-}
-continueAdd = confirm("do you want to add more?")
-//progress=> was able to make enter first name, last name and salary, continue and then repeat adding data.
-//need to ensure cancel works and data appears.
-console.log(employees);
 
+  continueAdd = confirm("do you want to add more?");
+  if(!continueAdd){
+  }
+}
+
+//console.log(employees); (not needed)
+//progress=> was able to make enter first name, last name and salary, continue and then repeat adding data.
+//need to ensure cancel works and data appears. (works)
 
 
 // Display the average salary
 // TODO: Calculate and display the average salary
 const displayAverageSalary = function(employeesArray) {
-  if(employeesArray.length === 0) {
-    console.log("no salary to calculate average for.")
+  if (employeesArray.length === 0) {
+    console.log("no more employees to calculate the average salary");
     return;
   }
+
+  let totalSalary= employeesArray.reduce((total, employee) => total + employee.salary);
+  let averageSalary = totalSalary / employeesArray.length;
+  console.log(averageSalary);
 }
-
-//now trying to calculate salary
-
-
-
 
 
 // Select a random employee
 const getRandomEmployee = function(employeesArray) {
   // TODO: Select and display a random employee
   // ***line 51 of mini project*** 
+  
 
 
 
