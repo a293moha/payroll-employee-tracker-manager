@@ -5,6 +5,7 @@ Challenge 3 requied me to modify a starter code to create an application that en
 
 ## Link to deployed app
 [Link to Deployed page](https://www.example.com)
+
 [GitHub](https://www.example.com)
 
 ## Screenshot
