@@ -13,11 +13,10 @@ while (continueAdd && count < 10) {
   if (lastName === null) break;
   const salary = prompt('Enter Salary');
   if (salary === null) break;
-
+  employees.push({firstName, lastName, salary});
   continueAdd = confirm("do you want to add more?");
-  if(!continueAdd){
+  count++;
   }
-}
 
 //console.log(employees); (not needed)
 //progress=> was able to make enter first name, last name and salary, continue and then repeat adding data.
