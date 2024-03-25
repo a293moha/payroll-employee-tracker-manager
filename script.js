@@ -17,30 +17,24 @@ while (continueAdd && count < 10) {
   continueAdd = confirm("do you want to add more?");
   count++;
   }
-
-//console.log(employees); (not needed)
-//progress=> was able to make enter first name, last name and salary, continue and then repeat adding data.
-//need to ensure cancel works and data appears. (works)
-
-
 // Display the average salary
 // TODO: Calculate and display the average salary
 const displayAverageSalary = function(employeesArray) {
-  if (employeesArray.length === 0) {
-    console.log("no more employees to calculate the average salary");
-    return;
-  }
-
-  let totalSalary= employeesArray.reduce((total, employee) => total + employee.salary);
+  let totalSalary = employeesArray.reduce((total, employee) => total + parseFloat(employee.salary), 0 );
   let averageSalary = totalSalary / employeesArray.length;
-  console.log(averageSalary);
-}
-
-
+  console.log('Average Salary:', averageSalary.toFixed(2)); 
+  }
 // Select a random employee
-const getRandomEmployee = function(employeesArray) {
   // TODO: Select and display a random employee
-  // ***line 51 of mini project*** 
+const getRandomEmployee = function(employeesArray) {
+  if (employeesArray.length > 0) {
+    const randomIndex = Math.floor(Math.random() * employeesArray.length);
+    console.log('Random Employee:', employeesArray[randomIndex]);
+  } else {
+    console.log('No more employees available');
+  }
+}
+ 
   
 
 
